@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINDER CASINO</title>
+    <style>
+        #container{
+            height: 300px;
+            width: 300px;
+            border: solid 5px gray;
+            text-align: center;
+
+        }
+        input{
+            background-color: orange;
+            color: white;
+            height: 70px;
+            width: 70px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        button{
+            height: 30px;
+            width: 70px;
+            margin-top: 20px;
+            background-color: green;
+            border-radius: 20px;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+
+        }
+
+    </style>
+
+    <img src="https://i.ibb.co/7NbT8vT/Untitled.png"/>
+</head>
+<body>
+    <div id="container">
+        <h1>KINDER SLOTS:</h1>
+        <input type="text" id ="one">
+        <input type="text" id ="two">
+        <input type="text" id ="three"><br>
+        <button id ="submit">PLAY</button>
+
+    </div>
+   
+    <script>
+
+function getRes(){
+    
+    let num = Math.floor(Math.random()*20)
+    let chosen = "SCHOKO";
+
+    if (num === 1) {
+      chosen = "ALEXA"
+    
+    } else if (num === 2) {
+       chosen = "BUENO"
+    } else if (num === 3) {
+       chosen = "BUENO"
+    } else if (num === 4) {
+       chosen = "COUNTRY"
+    } else if (num === 5) {
+       chosen = "COUNTRY"
+    } else if (num === 6) {
+       chosen = "COUNTRY"
+    } else if (num === 7) {
+       chosen = "CHOCO"
+    } else if (num === 8) {
+       chosen = "MINI"
+    } else if (num === 9) {
+       chosen = "MINI"
+    } else if (num === 10) {
+       chosen = "MINI"
+    } else if (num === 11) {
+       chosen = "MAXI KING"
+    } else if (num === 12) {
+       chosen = "MAXI KING"
+    } else if (num === 13) {
+       chosen = "SCHOKO BONS"
+    } else if (num === 14) {
+       chosen = "SCHOKO BONS"
+    } else if (num === 15) {
+       chosen = "SCHOKO BONS"
+    } else if (num === 16) {
+       chosen = "SCHOKO BONS"
+    } else if (num === 17) {
+       chosen = "CHOCO"
+    } else if (num === 18) {
+       chosen = "CULCAT"
+    } else if (num === 19) {
+       chosen = "SUIIII"
+    } else if (num === 20) {
+       chosen = "CREC"
+    }else if (num === 21) {
+       chosen = "BUENO"
+    } else if (num === 22) {
+       chosen = "BUENO"
+    } else if (num === 23) {
+       chosen = "COUNTRY"
+    } else if (num === 24) {
+       chosen = "COUNTRY"
+    } else if (num === 25) {
+       chosen = "COUNTRY"
+    } else if (num === 26) {
+       chosen = "CHOCO"
+    } else if (num === 27) {
+       chosen = "MINI"
+    } else if (num === 28) {
+       chosen = "MINI"
+    } else if (num === 29) {
+       chosen = "MINI"
+    } else if (num === 30) {
+       chosen = "MAXI KING"
+    } else if (num === 31) {
+       chosen = "MAXI KING"
+    } else if (num === 32) {
+       chosen = "SCHOKO BONS"
+    } else if (num === 33) {
+       chosen = "SCHOKO BONS"
+    } else if (num === 34) {
+       chosen = "SCHOKO BONS"
+    } else if (num === 35) {
+       chosen = "SCHOKO BONS"
+    } else if (num === 36) {
+       chosen = "CHOCO"
+    } else if (num === 37) {
+       chosen = "CULCAT"
+    } else if (num === 38) {
+       chosen = "SUIIII"
+    } else if (num === 39) {
+       chosen = "CREC"
+    }else if (num === 40) {
+       chosen = "BUENO"
+    } else if (num === 41) {
+       chosen = "BUENO"
+    } else if (num === 42) {
+       chosen = "COUNTRY"
+    } else if (num === 43) {
+       chosen = "COUNTRY"
+    } else if (num === 44) {
+       chosen = "COUNTRY"
+    } else if (num === 45) {
+       chosen = "CHOCO"
+    } else if (num === 46) {
+       chosen = "MINI"
+    } else if (num === 47) {
+       chosen = "MINI"
+    } else if (num === 48) {
+       chosen = "MINI"
+    } else if (num === 49) {
+       chosen = "MAXI KING"
+    } else if (num === 50) {
+       chosen = "MAXI KING"
+    } else if (num === 51) {
+       chosen = "SCHOKO BONS"
+    } else if (num === 52) {
+       chosen = "SCHOKO BONS"
+    } else if (num === 53) {
+       chosen = "SCHOKO BONS"
+    } else if (num === 54) {
+       chosen = "SCHOKO BONS"
+    } else if (num === 55) {
+       chosen = "CHOCO"
+    } else if (num === 56) {
+       chosen = "CULCAT"
+    } else if (num === 57) {
+       chosen = "SUIIII"
+    } else if (num === 58) {
+       chosen = "CRAIOVA"
+    }else if (num === 59) {
+       chosen = "FERENTARI"
+    }else if (num === 60) {
+       chosen = "BUENO WHITE"
+    }
+
+    return chosen;
+}
+
+        var randone= document.querySelector("#one")
+        var randtwo= document.querySelector("#two")
+       var randthree= document.getElementById("three")
+       var submit =document.getElementById("submit")
+       submit.addEventListener("click", function(){
+           numberone();
+           numbertwo();
+           numberthree();
+
+           
+
+       })
+       function numberone(){
+          let thing = getRes();
+          randone.value = thing
+       }
+       function numbertwo(){
+          let thing = getRes();
+          randtwo.value = thing
+       }
+       function numberthree(){
+          let thing = getRes();
+          randthree.value = thing
+       }
+
+    </script>
+    
+<img src="https://selvastoreuk.com/wp-content/uploads/2020/12/640x640.jpg"/>
+
+</body>
+</html>
